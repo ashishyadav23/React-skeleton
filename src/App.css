@@ -1,33 +1,53 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Hero {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  min-height: 70%;
+  height: 80vh;
+  max-height: 760px;
+  box-sizing: border-box;
+  padding: 48px 48px 32px;
+  overflow: hidden;
+  -webkit-transform: skewY(8deg);
+  transform: skewY(8deg);
+  -webkit-transform-origin: 100%;
+  transform-origin: 100%;
+  top: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.BackgroundSky {
+
+  background: -moz-linear-gradient(45deg, #665fee 0%, #27c2de 100%);
+  background: -webkit-linear-gradient(45deg, #665fee 0%, #27c2de 0%);
+  background: -o-linear-gradient(45deg, #665fee 0%, #27c2de 100%);
+  background: linear-gradient(45deg, #665fee 0%, #27c2de 100%);
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.AppBody {
+  position: relative;
+}
+
+.ContactUs {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width:350px) {
+  .ContactUs>span {
+    color: #fff
   }
 }
+
+@media (max-width: 568px) and (min-width: 320px) {
+  .Hero {
+    max-height: 384px !important;
+    min-height: 384px;
+  }
+}
+
+/* padding: 20px 0;
+  text-align: center; */
